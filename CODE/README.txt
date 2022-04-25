@@ -25,8 +25,11 @@ Install the libraries that I used manually in your own environment:
 *RUN THE PROGRAM*
 *****************
 Note: if another dataset (other than the Left Atrium dataset) is used, some parameters from inside of the files will need to be changed (for example, from ``run_segmentation.py”: the image width/ height or loading the model from memory/ generating a new one)
+0) 	You can use the following link to download a pre-trained model (https://www.dropbox.com/s/akohgos8j9lmfo5/trained.pt?dl=0). It needs to be placed in the main folder with the other python files.
+	Furthermore, in order to use a pre-trained model, you have to set the variable ``LOAD MODEL" in run_segmentation.py to ``True".
 1)	python generate_folder_structure.py
 	a.	will generate all the required folder for the user to add the training dataset (.nii images and segmentations)
+	b.    use the following link (https://www.dropbox.com/s/jihxggrx754o18c/Images_nii.zip?dl=0) in order to download the dataset from dropbox (you can replace the generated directory with the downloaded one).
 2)	python convert_nii_to_jpg.py
 	a.	will convert the training .nii images/ segmentations in .jpg images, saving them in the appropriate folders
 3)	python run_segmentation.py
