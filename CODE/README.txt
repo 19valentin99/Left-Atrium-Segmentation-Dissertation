@@ -24,6 +24,8 @@ Install the libraries that I used manually in your own environment:
 *****************
 *RUN THE PROGRAM*
 *****************
+Video demo for the program can be found at: https://www.youtube.com/watch?v=Y7U5CDJvfgY
+
 Note: if another dataset (other than the Left Atrium dataset) is used, some parameters from inside of the files will need to be changed (for example, from ``run_segmentation.py”: the image width/ height or loading the model from memory/ generating a new one)
 0) 	You can use the following link to download a pre-trained model (https://www.dropbox.com/s/akohgos8j9lmfo5/trained.pt?dl=0). It needs to be placed in the main folder with the other python files.
 	Furthermore, in order to use a pre-trained model, you have to set the variable ``LOAD MODEL" in run_segmentation.py to ``True".
